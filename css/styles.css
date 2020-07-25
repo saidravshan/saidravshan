@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.info {
+    flex: 1;
+    margin: 40vh auto;
+}
+
+.info .container {
+    width: 30rem;
+    float: right;
+}
+
+.info .title {
+    color: #363636;
+    font-weight: 600;
+    font-size: 3rem;
+    word-break: break-word;
+    margin-bottom: 0;
+}
+
+.info .subtitle {
+    color: #4a4a4a;
+    font-size: 1.25rem;
+    font-weight: 400;
+    word-break: break-word;
+    margin-top: 0.4rem;
+}
+
+.info .links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.3rem;
+}
+
+.info .links a {
+    color: #000;
+}
+
+.photo {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.photo > img {
+    vertical-align: center;
+    height: 95vh;
+}
