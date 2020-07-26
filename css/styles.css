@@ -1,9 +1,10 @@
 html, body {
+    overflow-x: hidden;
     margin: 0;
     font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.wrapper {
+.header {
     display: flex;
     height: 100vh;
 }
@@ -48,9 +49,74 @@ html, body {
     flex: 1;
     display: flex;
     align-items: flex-end;
+    z-index: -1;
 }
 
 .photo > img {
     vertical-align: center;
     height: 95vh;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 710px) {
+    .info .container {
+        margin-right: -7rem;
+    }
+}
+
+@media screen and (max-width: 1230px) and (min-width: 710px) {
+    .info .container {
+        margin-right: -13rem;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 710px) {
+    .header {
+        margin-right: -10rem;
+    }
+}
+
+@media screen and (max-width: 980px) and (min-width: 710px) {
+    .header {
+        margin-right: -17rem;
+    }
+}
+
+@media screen and (max-width: 860px) and (min-width: 710px) {
+    .header {
+        margin-right: -25rem;
+    }
+}
+
+@media screen and (max-width: 730px) and (min-width: 710px) {
+    .info .container {
+        zoom: 0.8;
+        width: 32rem;
+        margin-right: -17rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .info {
+        margin: 4rem auto;
+        zoom: 0.7;
+    }
+
+    .info .subtitle {
+        font-size: 1.18rem;
+    }
+    
+    .photo {
+        display: block;
+    }
+
+    .photo img {
+        width: 150%;
+        margin-left: -25%;
+        height: auto;
+        vertical-align: bottom;
+    }
 }
